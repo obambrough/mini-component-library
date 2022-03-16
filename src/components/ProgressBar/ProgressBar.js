@@ -27,7 +27,7 @@ const ProgressBar = ({ value, size }) => {
   value = Math.min(100, value);
   return (
     <Wrapper style={styles}>
-      <Bar percentage={value} style={styles}></Bar>
+      <Bar percentage={value} style={styles} role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow={value}></Bar>
     </Wrapper>
   );
 };
